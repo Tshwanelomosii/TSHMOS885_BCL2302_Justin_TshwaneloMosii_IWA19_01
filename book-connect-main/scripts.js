@@ -184,7 +184,7 @@ saveButton.addEventListener('click',changeThemeVision )
 
 //Show more button
 const showMoreButton = document.querySelector("[data-list-button]");
-showMoreButton.innerHTML = "next page"
+showMoreButton.innerHTML = "Next Page"
 showMoreButton.addEventListener("click", () => {
   const fragment = document.createDocumentFragment();
   startIndex += 36;
