@@ -187,8 +187,8 @@ const showMoreButton = document.querySelector("[data-list-button]");
 showMoreButton.innerHTML = "Next Page"
 showMoreButton.addEventListener("click", () => {
   const fragment = document.createDocumentFragment();
-  startIndex += 36;
-  endIndex += 36;
+  startIndex += 37;
+  endIndex += 37;
   const startIndex1 = startIndex;
   const endIndex1 = endIndex;
   console.log(startIndex1);
