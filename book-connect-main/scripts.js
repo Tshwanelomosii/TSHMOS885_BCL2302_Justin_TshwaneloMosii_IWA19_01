@@ -183,12 +183,19 @@ saveButton.addEventListener('click',changeThemeVision )
 
 
 //Show more button
+// Selecting the button with the attribute "data-list-button"
 const showMoreButton = document.querySelector("[data-list-button]");
+
+// Setting the innerHTML of the button to "Next Page"
 showMoreButton.innerHTML = "Next Page"
+
+// Adding an event listener to the button for the "click" event
 showMoreButton.addEventListener("click", () => {
+
+  // Creating a document fragment to optimize DOM manipulations
   const fragment = document.createDocumentFragment();
-  startIndex += 37;
-  endIndex += 37;
+  startIndex += 36;
+  endIndex += 36;
   const startIndex1 = startIndex;
   const endIndex1 = endIndex;
   console.log(startIndex1);
