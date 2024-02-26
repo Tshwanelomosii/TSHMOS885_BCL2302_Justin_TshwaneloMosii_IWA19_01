@@ -189,9 +189,16 @@ const showMoreButton = document.querySelector("[data-list-button]");
 // Setting the innerHTML of the button to "Next Page"
 showMoreButton.innerHTML = "Next Page"
 
+
+
+
 // Adding an event listener to the button for the "click" event
 showMoreButton.addEventListener("click", () => {
 
+  window.scrollTo({ // added smooth scrolling
+    top: 0,
+    behavior: "smooth"
+  });
   // Creating a document fragment to optimize DOM manipulations
   const fragment = document.createDocumentFragment();
   startIndex += 36;
